@@ -1,0 +1,340 @@
+@media screen and (min-width: 1440px) {
+  .linkCol,
+  .expCol {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menuList {
+    margin-top: -100px;
+  }
+
+  .expList {
+    margin-top: -150px;
+  }
+}
+
+/* ===================== max-991px ===================== */
+
+@media screen and (max-width: 991px) {
+  .font-20 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .font-22 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .font-26 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .font-34 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .font-40 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .font-45 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .font-50 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  /* =============== header =============== */
+
+  .main-nav {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .mblLogo {
+    display: block;
+  }
+
+  .main-nav .menu {
+    background-color: #222;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    padding: 25px;
+    transition: all 0.5s ease-in-out;
+    z-index: 999;
+  }
+
+  .menu .mainList {
+    height: auto;
+  }
+
+  .mainLink {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .navbar-toggle,
+  .navbar-close {
+    display: block;
+  }
+
+  .navbar-toggle i,
+  .navbar-close i {
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #2d2d2d;
+    box-shadow: rgba(255, 255, 255, 1) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .menu .navbar-close i {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 17px;
+  }
+
+  .navbar-toggle i {
+    font-size: 22px;
+  }
+
+  /* =========== MegaMenu ========== */
+
+  .header {
+    position: unset;
+    background-color: #24303e;
+  }
+
+  .headerTel {
+    display: none;
+  }
+
+  .expCol {
+    display: none;
+  }
+
+  .menuList {
+    gap: 26px;
+  }
+
+  .megaList {
+    height: 100vh;
+  }
+
+  .megaList .row {
+    justify-content: space-between;
+  }
+
+  /* ===============Footer=============== */
+
+  .footer {
+    padding-left: 50px;
+  }
+
+  .footer .footer-heading {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  /* ===============Inner-Sec=============== */
+
+  .content {
+    height: auto;
+  }
+
+  .platform {
+    height: auto;
+  }
+
+  .reBok {
+    width: 200px;
+  }
+
+  .rateCol {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .ratCard::before {
+    display: none;
+  }
+
+  .cater .solutionsImg img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .photography {
+    height: auto;
+  }
+
+  .photography .photographyRow {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .photographyCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .photographyCard::before {
+    display: none;
+  }
+
+  .photographyImg img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .buyability {
+    height: auto;
+  }
+
+  .shouldImg {
+    width: 100%;
+  }
+}
+
+/* ===================== max-767px ===================== */
+
+@media screen and (max-width: 767px) {
+  .font-18 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .font-20 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .font-22 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .font-24 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .font-34 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .font-45 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .font-50 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  /* ===============Footer=============== */
+
+  .footer {
+    border-top-left-radius: 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .footer .footer-heading {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .list-unstyled li a:hover::before {
+    transition: all 0.7s ease;
+  }
+
+  /* ===============Popup=============== */
+
+  .popup-card {
+    top: 120px;
+  }
+
+  .popup-left {
+    float: left;
+    padding: 10px 20px;
+  }
+
+  .ourPopup .modal-header {
+    top: 26%;
+    right: 8%;
+  }
+
+  /* ===============Inner-Page=============== */
+}
+
+/* ==================== max-399px ====================== */
+
+@media (max-width: 399px) {
+  .popup-card {
+    top: 100px;
+  }
+
+  .popup-left {
+    float: left;
+    padding: 0px;
+  }
+
+  .ourPopup .modal-header {
+    top: 23%;
+    right: 8%;
+  }
+}
+
+/* ==================== max-321px ====================== */
+
+@media (max-width: 321px) {
+  .ourPopup .modal-header {
+    top: 23%;
+    right: 10%;
+  }
+
+  .font-50 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .input-group i {
+    top: 18px;
+    font-size: 12px;
+    left: 5px;
+  }
+
+  .form-popup input {
+    padding-left: 30px;
+  }
+}

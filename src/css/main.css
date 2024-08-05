@@ -1,0 +1,520 @@
+:root {
+  --primary-color: #006fff;
+  --secondary-color: #24303e;
+  --primary-fonts: "Montserrat", sans-serif;
+  --secondary-fonts: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 280px;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*===================== custom bg-colors =====================*/
+
+.bgW {
+  background-color: #fbfbfb;
+}
+
+.bg-b {
+  background-color: #000000;
+}
+
+.bg-b2 {
+  background-color: #272727;
+}
+
+.bg-g {
+  background-color: #e2e2e2;
+}
+
+.bg-p {
+  background-color: #006fff;
+}
+
+.bg-s {
+  background-color: var(--secondary-color);
+}
+
+/*===================== custom colors =====================*/
+
+.txt-w {
+  color: #ffffff;
+}
+
+.txt-b {
+  color: #000000;
+}
+
+.txt-g {
+  color: #c7c7c7;
+}
+
+.txt-p {
+  color: var(--primary-color);
+}
+
+.txt-s {
+  color: var(--secondary-color);
+}
+
+/*===================== custom font-family =====================*/
+
+.font-p {
+  font-family: var(--primary-fonts);
+}
+
+.font-s {
+  font-family: var(--secondary-fonts);
+}
+
+/*===================== custom font-size =====================*/
+.font-12 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.font-14 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.font-16 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.font-18 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.font-20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.font-22 {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.font-24 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.font-26 {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.font-34 {
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.font-45 {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.font-50 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.font-60 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+/*===================== custom font-weight =====================*/
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+/*===================== custom buttons =====================*/
+
+.btns {
+  border: 0px;
+  border-radius: 8px;
+  height: 40px;
+  min-width: 180px;
+  width: max-content;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-transform: uppercase;
+  animation: 5s infinite gradient;
+  transition: all 0.5s ease-in-out;
+  font-family: var(--primary-fonts);
+}
+
+.btn-b {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.btn-b:hover {
+  background-color: #fff;
+  color: #2d2d2d;
+}
+
+.btn-w {
+  background-color: #fff;
+  color: #222;
+}
+
+.btn-p {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-s {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-t {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: #000;
+  gap: 5px;
+}
+
+.btn-t:hover {
+  background-color: var(--primary-color);
+  color: #000 !important;
+}
+
+/*===================== scrollbar =====================*/
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(167, 92, 0, 0.3);
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(167, 92, 0, 0.3);
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+  background-color: var(--primary-color);
+}
+
+/*===================== header =====================*/
+
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.logo img{
+  width: 75%;
+  filter: brightness(1.5);
+}
+
+.navbar-close,
+.navbar-toggle,
+.mblLogo {
+  display: none;
+}
+
+.main-nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.menu .mainList {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mainLink {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--primary-fonts);
+  text-transform: capitalize;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav .menu li .mainLink:hover {
+  color: var(--primary-color);
+}
+
+.main-nav .menu li .mainLink.active {
+  color: var(--primary-color);
+}
+
+.btn-p img{
+  filter: invert(1);
+}
+
+/* =========== MegaMenu ========== */
+
+.megaList {
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 80%;
+  z-index: 9999;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.megaLogo {
+  background-color: #000;
+  padding: 15px;
+}
+
+.megaLogo img {
+  width: 120px;
+  margin-left: 50px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px;
+  gap: 22px;
+}
+
+.megaList .closeMenu {
+  color: #006fff;
+  font-size: 40px;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.megaList li a.megaLinks {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.megaImg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.megaImg img {
+  width: 90px;
+}
+
+.megaImgTxt a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  padding: 0px 18px;
+  height: 40px;
+  width: max-content;
+  border-radius: 50px;
+  border: 0;
+  color: #fff;
+  background-color: #ff9900;
+  font-family: "Poppins";
+}
+
+.social {
+  background-color: #000;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+}
+
+.social i {
+  color: #006fff;
+}
+
+.megaImgTxt input {
+  border-radius: 0;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--primary-fonts);
+}
+
+.megaImgTxt form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+::placeholder {
+  font-family: var(--primary-fonts);
+}
+
+.expCol button {
+  height: 40px;
+  border-radius: 0;
+}
+
+.expCol button:hover {
+  background-color: #ffff;
+  color: #000;
+  border: none;
+  height: 40px;
+}
+
+.bder {
+  padding: 0;
+}
+
+.header .headerTel .btn-p img {
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden {
+  left: -100% !important;
+}
+
+/* ===================== footer ===================== */
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer .footerLogo img{
+  width: 60%;
+  filter: brightness(1.5);
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.socialLinks i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.socialLinks i:hover {
+  color: #006fff;
+}
+
+.footerLinks {
+  position: relative;
+}
+
+.footerLinks::before {
+  content: url(../images/icons/footer-before.png);
+  position: absolute;
+  left: -40px;
+  top: 0;
+}
+
+.footerLinks ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLinks ul li a:hover {
+  color: #006fff;
+}
